@@ -16,7 +16,6 @@ code_clipboard: true
 highlight_theme: darkula
 headingLevel: 2
 generator: "@tarslib/widdershins v4.0.23"
-
 ---
 
 # volei
