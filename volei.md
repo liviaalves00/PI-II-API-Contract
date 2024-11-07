@@ -33,6 +33,19 @@ Base URLs:
 
 GET /api/jogadores
 
+### Params
+
+|Name|Location|Type|Required|Description|
+|---|---|---|---|---|
+|sexo|query|string| no |none|
+|order_by|query|string| no |none|
+|sort_by|query|string| no |none|
+|posicao|query|string| no |none|
+|idade[gte]|query|integer| no |none|
+|idade[lte]|query|integer| no |none|
+|page|query|integer| no |none|
+|perPage|query|integer| no |none|
+
 > Response Examples
 
 > 200 Response
@@ -237,6 +250,18 @@ DELETE /api/jogadores/{id}
 
 GET /api/arenas
 
+### Params
+
+|Name|Location|Type|Required|Description|
+|---|---|---|---|---|
+|tipo_arena|query|string| no |none|
+|order_by|query|string| no |none|
+|sort_by|query|string| no |none|
+|page|query|integer| no |none|
+|perPage|query|string| no |none|
+|preco_hora[gte]|query|integer| no |none|
+|preco_hora[lte]|query|string| no |none|
+
 > Response Examples
 
 > 200 Response
@@ -420,6 +445,21 @@ DELETE /api/arenas/{id}
 ## GET pelada
 
 GET /api/peladas
+
+### Params
+
+|Name|Location|Type|Required|Description|
+|---|---|---|---|---|
+|horario_inicio[gte]|query|number| no |none|
+|horario_inicio[lte]|query|number| no |none|
+|tipo_jogo|query|string| no |none|
+|qtd_horas|query|integer| no |none|
+|arena|query|string| no |none|
+|id_responsavel|query|integer| no |none|
+|page|query|integer| no |none|
+|perPage|query|integer| no |none|
+|order_by|query|string| no |none|
+|sort_by|query|string| no |none|
 
 > Response Examples
 
@@ -803,6 +843,15 @@ HTTP Status Code **200**
 ## GET partidas
 
 GET /api/partidas
+
+### Params
+
+|Name|Location|Type|Required|Description|
+|---|---|---|---|---|
+|sort_by|query|string| no |none|
+|order_by|query|string| no |none|
+|page|query|string| no |none|
+|perPage|query|string| no |none|
 
 > Response Examples
 
